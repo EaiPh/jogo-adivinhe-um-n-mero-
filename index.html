@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="">
+      <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+      <script src="script.js" defer></script>
+      <title>Jogo adivinhe um numero</title>
+   </head>
+   <body>
+      <main id="principal">
+         <h1>Jogo Adivinhe um número</h1>
+         <p>Selecionamos um número aleatório entre 1 e 100. Veja se consegue adivinhar em 10 chances ou menos. Nós lhe diremos se seu palpite está com valor alto ou baixo.</p>
+         <p>
+            digite seu palpite: 
+            <input type="number" name="palpite" id="palpite" placeholder="digite seu palpite aqui" />
+            <input type="button" name="enviarpalpite" id="enviarpalpite" value="enviar palpite" onclick="conferirPalpite()"/>
+         </p>
+         <p id="pTurnos">Palpites anteriores: </p>
+         <p id="rPalpite"></p>
+         <input type="button" id="playAgain" hidden value="jogar novamente" />
+      </main>
+   </body>
+</html>
